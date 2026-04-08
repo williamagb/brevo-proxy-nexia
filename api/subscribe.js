@@ -8,7 +8,6 @@ module.exports = async function handler(req, res) {
 
   const body = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
   const email = body?.email;
-  const prenom = body?.prenom;
 
   if (!email) return res.status(400).json({ error: 'Email requis' });
 
@@ -20,7 +19,7 @@ module.exports = async function handler(req, res) {
     },
     body: JSON.stringify({
       email: email,
-      attributes: { PRENOM: prenom },
+      listIds: [2],
       updateEnabled: true
     })
   });
