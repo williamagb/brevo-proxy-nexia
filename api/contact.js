@@ -21,8 +21,6 @@ module.exports = async function handler(req, res) {
       email: email,
       listIds: [94],
       attributes: {
-        NOM: body?.nom,
-        SURNAME: body?.surname,
         JOB_TITLE: body?.job_title,
         SOCIETE: body?.societe
       },
