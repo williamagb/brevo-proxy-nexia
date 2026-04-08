@@ -19,7 +19,7 @@ module.exports = async function handler(req, res) {
     },
     body: JSON.stringify({
       email: email,
-      listIds: [94],
+      listIds: [98],
       attributes: {
         JOB_TITLE: body?.job_title,
         SOCIETE: body?.societe
